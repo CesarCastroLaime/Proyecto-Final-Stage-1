@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenLife</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="logo">
+            <span class="leaf"> </span>
+            <h1>GreenLife</h1>
+        </div>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#educacion">Educación</a>
+            <a href="#participa">Participá</a>
+            <a href="#puntos">Puntos Verdes</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- INICIO -->
+    <section id="inicio" class="hero">
+        <h2>Un futuro más verde empieza hoy</h2>
+        <p>Cuidemos juntos nuestro planeta con acciones simples.</p>
+    </section>
+
+    <!-- EDUCACIÓN -->
+    <section id="educacion" class="bg-section">
+        <h2>Educación Ambiental</h2>
+        <div class="cards-container">
+            <div class="card">
+                <img src="img/reciclaje.png" alt="Reciclaje">
+                <h3>Qué se puede reciclar</h3>
+                <p>Aprende qué materiales son reciclables y cómo separarlos correctamente.</p>
+            </div>
+            <div class="card">
+                <img src="img/Ahorro de energia.png" alt="Ahorro de energía">
+                <h3>Ahorrar energía</h3>
+                <p>Consejos para reducir el consumo de energía en tu hogar y oficina.</p>
+            </div>
+            <div class="card">
+                <img src="img/cuidado del agua.png" alt="Cuidado del agua">
+                <h3>Cuidar el agua</h3>
+                <p>Pequeñas acciones diarias que ayudan a conservar el agua potable.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PARTICIPÁ -->
+    <section id="participa" class="bg-section participa">
+        <h2>Sumate al cambio</h2>
+        <p>Ingresa tus datos y forma parte de nuestra comunidad ecológica 🌱</p>
+
+        <form id="formPart" class="form-part">
+            <input id="nombre" type="text" placeholder="Tu nombre" required>
+            <input id="email" type="email" placeholder="Tu email" required>
+            <button class="btn" type="submit">¡Me sumo!</button>
+        </form>
+
+        <p id="msgPart" class="msg"></p>
+
+        <div id="listaUsuarios" class="usuarios-cards"></div>
+    </section>
+
+    <!-- PUNTOS VERDES -->
+    <section id="puntos" class="bg-section">
+        <h2>Puntos Verdes</h2>
+        <div id="map"></div>
+        <ul id="listaPuntos"></ul>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="bg-section contacto-section">
+        <h2>Contacto</h2>
+        <p>Escribinos y nos pondremos en contacto contigo para ayudarte a sumarte al cambio 🌱</p>
+
+        <form id="formCont" class="contact-form">
+            <input type="text" placeholder="Tu nombre" required>
+            <input type="email" placeholder="Tu email" required>
+            <textarea placeholder="Mensaje" rows="5" required></textarea>
+            <button class="btn" type="submit">Enviar mensaje</button>
+        </form>
+
+        <p id="msgCont" class="msg"></p>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
